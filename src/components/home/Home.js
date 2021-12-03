@@ -10,7 +10,7 @@ function Home() {
     useEffect(() => {
         axios
             .get(
-                'http://makeup-api.herokuapp.com/api/v1/products.json'
+                'https://makeup-api.herokuapp.com/api/v1/products.json'
         )
             .then(res => {
                 setCosmetics(res.data);
